@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sennheiser</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <a href="#top"><img src="assets/logo.png" alt="logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="#top">HOME</a></li>
+          <li><a href="store.html">STORE</a></li>
+          <li><a href="customiser.html">BEATIFY</a></li>
+          <li><a href="assignment.html">ASSIGNMENT</a></li>
+          <li><a href="demo.html">DEMO</a></li>
+        </ul>
+        <a href="#"><img src="assets/menu.png" id="menu-icon" alt="Burger Menu Icon"></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero-container" id="top">
+    <a href="#"><img src="assets/hero_images/hero_arrow.png" class="hero-arrow" id="hero-arrow-left" alt="Hero Arrow Left"></a>
+    <a href="#"><img src="assets/hero_images/hero_arrow.png" class="hero-arrow" id="hero-arrow-right" alt="Hero Arrow Right"></a>
+    <div class="hero-overlay"></div>
+    <img src="assets/hero_images/hero-image3.jpg" class="hero-image" id="image1" alt="Man wearing headphones">
+    <img src="assets/hero_images/hero-image1.jpg" class="hero-image" id="image2" alt="Man with hands near head">
+    <img src="assets/hero_images/hero-image2.jpg" class="hero-image" id="image3" alt="Headphones on a box">
+    <h1 class="hero-title" id="hero-title1">THE BEAUTY OF SOPHISTICATION</h1>
+    <h3 class="hero-subtitle" id="hero-subtitle1">There is emotion in refinement. Sensuality. When objects become more than just mere things to fulfill a basic need, they gain a certain quality from which the joy of life is made.</h3>
+    <h1 class="hero-title" id="hero-title2">MOMENTUM</h1>
+    <h3 class="hero-subtitle" id="hero-subtitle2">Every set of MOMENTUM headphones echoes our ambition to create that perfect sound.</h3>
+    <h1 class="hero-title" id="hero-title3">The Audiophile Range</h1>
+    <h3 class="hero-subtitle" id="hero-subtitle3">Innovation doesn’t come out of nowhere, it comes from inside ourselves. It is driven by our inner voice.</h3>
+
+  </div>
+
+  <div id="pop-out-menu" class="pop-out-menu">
+    <ul class="pop-out-menu-nav">
+      <li><a href="#top">HOME</a></li>
+      <li><a href="store.html">STORE</a></li>
+      <li><a href="#location">VISIT US</a></li>
+      <li><a href="customiser.html">BEATIFY</a></li>
+      <li><a href="assignment.html">ASSIGNMENT</a></li>
+    </ul>
+    <div id="store" class="store">
+      <ul>
+        <li class="store-section"><a href="store.html">
+          <h3 class="store-section-title">Headphones & Headsets</h3>
+          <img src="assets/headphones1.png" class="store-section-image" alt="Headphones">
+        </a></li>
+
+      <li class="store-section"><a href="store.html">
+          <h3 class="store-section-title">Office & Contact Center Headphones</h3>
+          <img src="assets/headset1.png" class="store-section-image" alt="Headset">
+        </a></li>
+
+        <li class="store-section"><a href="store.html">
+          <h3 class="store-section-title">Microphone & Wireless Systems</h3>
+          <img src="assets/microphone1.png" class="store-section-image" alt="Microphone">
+        </a></li>
+
+        <li class="store-section"><a href="store.html">
+          <h3 class="store-section-title">Meeting & Conference Solutions</h3>
+          <img src="assets/conference_speakers1.png" class="store-section-image" alt="Conference Speakers">
+        </a></li>
+
+        <li class="store-section"><a href="store.html">
+          <h3 class="store-section-title">Visitor Guidance & Audio Streaming</h3>
+          <img src="assets/guidance1.png" class="store-section-image" alt="Guidance System">
+        </a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="location" class="location">
+    <div class="location-text">
+      <img class="pinpoint" src="assets/pinpoint.png" alt="Pinpoint">
+      <h1 id="location-header">COME VISIT US!</h1>
+      <p id="location-subtext">Use the interactive map to find your closest store</p>
+
+    </div>
+    <div id="map"></div>
+  </div>
+
+
+  <script>
+    var pos = {lat: 0, lng: 0};
+    function myMap() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          pos = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+          console.log(pos);
+          var map = new google.maps.Map(document.getElementById("map"), {
+              //center: new google.maps.LatLng(53.230553, -0.540348),
+              center: pos,
+              zoom: 14,
+              mapTypeId: google.maps.MapTypeId.MAP
+          });
+          var marker = new google.maps.Marker({
+            position: pos,
+            map: map
+          });
+          console.log(marker);
+        })
+      }
+    }
+
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkxJwW3MOQygYFpr5QqU57cBEv5DFDvwo&callback=myMap"></script>
+
+  <div class="temp">
+
+  </div>
+
+  <footer>
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3 class="footer-header">QUICK LINKS</h3>
+        <ul class="footer-ul">
+          <li class="footer-li"><a href="index.html">Home</a></li>
+          <li class="footer-li"><a href="store.html">Store</a></li>
+          <li class="footer-li"><a href="customiser.html">Beatify</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-social">
+          <h3 class="footer-header" id="footer-social-header">Connect With Us!</h3>
+          <img class="footer-social-icons" src="assets/social_media/fb.png" alt="Facebook">
+          <img class="footer-social-icons" src="assets/social_media/twit.png" alt="Twitter">
+          <img class="footer-social-icons" src="assets/social_media/insta.png" alt="Instagram">
+          <img class="footer-social-icons" src="assets/social_media/yt.png" alt="YouTube">
+          <img class="footer-social-icons" src="assets/social_media/in.png" alt="LinkedIn">
+        </div>
+      </div>
+      <div class="footer-right">
+        <h3 class="footer-header">Useful Information</h3>
+        <ul class="footer-ul">
+          <li class="footer-li">✉: support@sennheiser.com</li>
+          <li class="footer-li">☎: 01234567891
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

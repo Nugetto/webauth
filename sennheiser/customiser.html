@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Sennheiser Beatify</title>
+  <link href="css/reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/customiser.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/scrollTo.js"></script>
+  <script src="js/localScroll.js"></script>
+  <script src="js/customiser.js"></script>
+</head>
+<body>
+  <header id="top">
+    <div class="container">
+      <a href="index.html"><img src="assets/logo.png" alt="logo" class="logo"></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="store.html">STORE</a></li>
+          <li><a href="customiser.html">BEATIFY</a></li>
+          <li><a href="assignment.html">ASSIGNMENT</a></li>
+          <li><a href="demo.html">DEMO</a></li>
+        </ul>
+        <a href="#"><img src="assets/menu.png" id="menu-icon" alt="Burger Menu Icon"></a>
+      </nav>
+    </div>
+  </header>
+  <div id="pop-out-menu" class="pop-out-menu">
+    <ul class="pop-out-menu-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="store.html">STORE</a></li>
+      <li><a href="customiser.html">BEATIFY</a></li>
+      <li><a href="assignment.html">ASSIGNMENT</a></li>
+      <li><a href="demo.html">DEMO</a></li>
+    </ul>
+  </div>
+
+
+  <div class="customiser-container">
+    <div class="customiser-section">
+      <div class="overlay"></div>
+      <div class="customiser-row">
+        <h3 class="row-title">Snare</h3>
+        <ul class="customiser-buttons">
+          <li class="button row-1"></li>
+          <li class="button row-1"></li>
+          <li class="button row-1"></li>
+          <li class="button row-1"></li>
+          <li class="button row-1"></li>
+          <li class="button row-1"></li>
+          <li class="button row-1"></li>
+          <li class="button row-1"></li>
+        </ul>
+      </div>
+      <div class="customiser-row">
+        <h3 class="row-title">Bass</h3>
+        <div class="box-wrap">
+        <ul class="customiser-buttons">
+          <li class="button row-2"></li>
+          <li class="button row-2"></li>
+          <li class="button row-2"></li>
+          <li class="button row-2"></li>
+          <li class="button row-2"></li>
+          <li class="button row-2"></li>
+          <li class="button row-2"></li>
+          <li class="button row-2"></li>
+        </ul>
+        </div>
+      </div>
+      <div class="customiser-row">
+        <h3 class="row-title">Cowbell</h3>
+        <div class="box-wrap">
+        <ul class="customiser-buttons">
+          <li class="button row-3"></li>
+          <li class="button row-3"></li>
+          <li class="button row-3"></li>
+          <li class="button row-3"></li>
+          <li class="button row-3"></li>
+          <li class="button row-3"></li>
+          <li class="button row-3"></li>
+          <li class="button row-3"></li>
+        </ul>
+        </div>
+      </div>
+      <div class="customiser-row">
+        <h3 class="row-title">Hi-Hat</h3>
+        <div class="box-wrap">
+        <ul class="customiser-buttons">
+          <li class="button row-4"></li>
+          <li class="button row-4"></li>
+          <li class="button row-4"></li>
+          <li class="button row-4"></li>
+          <li class="button row-4"></li>
+          <li class="button row-4"></li>
+          <li class="button row-4"></li>
+          <li class="button row-4"></li>
+        </ul>
+        </div>
+      </div>
+      <div class="customiser-row">
+        <h3 class="row-title">Crash</h3>
+        <div class="box-wrap">
+        <ul class="customiser-buttons">
+          <li class="button row-5"></li>
+          <li class="button row-5"></li>
+          <li class="button row-5"></li>
+          <li class="button row-5"></li>
+          <li class="button row-5"></li>
+          <li class="button row-5"></li>
+          <li class="button row-5"></li>
+          <li class="button row-5"></li>
+        </ul>
+        </div>
+      </div>
+      <button id="play-pause" class="customiser-button" type="button">Play</button>
+      <button id="clear" class="customiser-button" type="button">Clear</button>
+    </div>
+    <div class="customiser-section">
+      <h1 class="settings-title" id="settings-title">Settings</h1>
+      <h3 class="settings-title" id="tempo-header">Tempo (300)</h3>
+      <input type="range" min="100" max="1000" value="300" class="slider" id="tempo-slider">
+    </div>
+  </div>
+
+</body>
+</html>

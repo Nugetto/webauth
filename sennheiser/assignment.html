@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sennheiser Assignment</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/assignment.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#top"><img src="assets/logo.png" alt="logo" class="logo"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="store.html">STORE</a></li>
+            <li><a href="customiser.html">BEATIFY</a></li>
+            <li><a href="assignment.html">ASSIGNMENT</a></li>
+            <li><a href="demo.html">DEMO</a></li>
+          </ul>
+          <a href="#"><img src="assets/menu.png" id="menu-icon" alt="Burger Menu Icon"></a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="assignment-container">
+      <h1 class="assignment-title">Assignment Report</h1>
+      <h3 class="assignment-subtitle">Introduction</h3>
+      <p class="assignment-paragraph">
+        In this assessment for Web Authoring we were tasked with creating a website of a band or brand using our newly-learned skills of HTML, CSS, and JavaScript. The website had to comply with current web standards. This document explains the process of the creation of the website, ideas, about the website itself, what skills I have learned and been able implement, and my strengths and weaknesses.
+      </p>
+
+      <h3 class="assignment-subtitle">Structure</h3>
+      <p class="assignment-paragraph">
+        I have taken effort to organise my folders within my website root so that it is easier to reference them and so the website is more efficient. From Figure 1 you can see that I have my main HTML documents in the root folder, this is because I don’t have many pages so this makes it simpler to reference them. If I were to have a lot more HTML files then I would go with a more hierarchical structure to organise the HTML pages into separate directories. I also have separate folders for my assets (Images, sounds, videos, etc), a folder for my CSS files and another for my JS files. Keeping these separate helps me find them and reference them in my code easier and quicker without the hassle of going through many files.
+      </p>
+      <img class="assignment-image" id="figure1" src="assets/assignment_pictures/figure1.png" alt="Folder Hierarchy">
+      <h5 class="figure-text">Figure 1</h5>
+      <p class="assignment-paragraph">
+        I have also used structure within my code by using indents and commenting my code. Indents allow me to differ different sections, loops, and functions. Because of this I have been able to efficiently able to find parts of my code when needed.
+      </p>
+
+      <h3 class="assignment-subtitle">Validation</h3>
+      <p class="assignment-paragraph">
+        I checked through all my HTML documents via the W3C validation tool and corrected where needed. Below is a series of screenshots of errors and how I fixed them.
+
+        One of the errors I got was that I didn’t gave alt tags on some of my images (Figure 2). I had this on a couple of my pages. These were the images that I forgot about such as logos, menu items, etc. I have gone through and added an alt tag to each image which then gave me no errors (Figure 3).
+      </p>
+      <img class="assignment-image" id="figure2" src="assets/assignment_pictures/figure2.png" alt="W3C Error">
+      <h5 class="figure-text">Figure 2</h5>
+      <img class="assignment-image" id="figure3" src="assets/assignment_pictures/figure3.png" alt="W3C Validation">
+      <h5 class="figure-text">Figure 3</h5>
+
+      <h3 class="assignment-subtitle">Current Web Standards</h3>
+      <p class="assignment-paragraph">
+        In this section I am going to be talking about the strengths and weaknesses of current web standards. The first strength of current web standards means it is more easily accessible to everybody who has access to the internet. With advances of technology such as text-to-speech which allows the blind to access the internet, this is because each image must have an alt tag which states what the image is of as of the current web standards. Another advantage is that there are many websites that validate your code for you, allowing you to easily understand how to make your website ready for current web standards. One weakness would be that not all browsers support certain functions, meaning research has to be done and further code has to be implemented to make sure it is able to run on all browsers (or at least most). This can take a lot longer than it would do otherwise, meaning time constraints is a weakness.
+
+        The website has been tested on multiple browsers to make sure it is at a good enough standard. Luckily enough, all of the code I have used to create my website works on all browsers.
+      </p>
+
+      <h3 class="assignment-subtitle">Techniques Used</h3>
+      <p class="assignment-paragraph">
+        I have used different techniques in my jQuery, JS and CSS to make sure my website is professional and interactive. I used local storage in my website to save data and then use this data again if the user closes or refreshes the webpage. Specifically, the user presses buttons to select certain music beats and each time they press one, their selected buttons are saved and then loaded again when back on the page if they leave. Another technique used is a slider for my customiser which allows them to change the tempo of the beat. The slider ranges from 100 (0.1s) to 1000 (1s). I have also implemented the feature of audio to my website as the customiser is about making your own song/beat.
+      </p>
+
+      <h3 class="assignment-subtitle">Challenges</h3>
+      <p class="assignment-paragraph">
+        One of the main challenges that I faced during this assessment was designing my website so it could be used on mobile as well as on a desktop. I built my website desktop first, meaning I had to then redesign it for mobile which became tricky. In the end I had to remove certain elements on mobile to overcome the obstacles of not being able to get them to work. I used relative values for sizes and distances and also used CSS media queries for specific sized windows. Another challenge I had was saving what buttons the user has pressed on the customiser. I eventually concluded having a large binary string, with each button have an on and off state, either being a 1 or 0. This worked well and was saved to local storage every time a button was pressed.
+      </p>
+
+      <h3 class="assignment-subtitle">References</h3>
+      <p class="assignment-paragraph">
+        <ul>
+          <li class="references">https://en-uk.sennheiser.com/ for hero and product images and also hero and product descriptions.</li>
+          <li class="references">https://iconmonstr.com/ for social media icons.</li>
+        </ul>
+      </p>
+
+
+    </div>
+
+
+    <footer>
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+          <h3 class="footer-header">QUICK LINKS</h3>
+          <ul class="footer-ul">
+            <li class="footer-li"><a href="index.html">Home</a></li>
+            <li class="footer-li"><a href="store.html">Store</a></li>
+            <li class="footer-li"><a href="customiser.html">Beatify</a></li>
+          </ul>
+        </div>
+        <div class="footer-middle">
+          <div class="footer-social">
+            <h3 class="footer-header" id="footer-social-header">Connect With Us!</h3>
+            <img class="footer-social-icons" src="assets/social_media/fb.png" alt="Facebook">
+            <img class="footer-social-icons" src="assets/social_media/twit.png" alt="Twitter">
+            <img class="footer-social-icons" src="assets/social_media/insta.png" alt="Instagram">
+            <img class="footer-social-icons" src="assets/social_media/yt.png" alt="YouTube">
+            <img class="footer-social-icons" src="assets/social_media/in.png" alt="LinkedIn">
+          </div>
+        </div>
+        <div class="footer-right">
+          <h3 class="footer-header">Useful Information</h3>
+          <ul class="footer-ul">
+            <li class="footer-li">✉: support@sennheiser.com</li>
+            <li class="footer-li">☎: 01234567891
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </body>
+</html>
